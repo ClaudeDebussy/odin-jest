@@ -1,0 +1,29 @@
+{
+  "name": "odin-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch" : "jest --watchALL"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudeDebussy/odin-jest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudeDebussy/odin-jest/issues"
+  },
+  "homepage": "https://github.com/ClaudeDebussy/odin-jest#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@types/jest": "^30.0.0",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0",
+    "node-notifier": "^10.0.1"
+  }
+}
