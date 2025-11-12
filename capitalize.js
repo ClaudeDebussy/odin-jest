@@ -6,7 +6,7 @@ export function capitalize(string) {
   }
 }
 
-function isTitle(string) {
+export function isTitle(string) {
   const words = String(string).split(/\s+/).filter(Boolean);
 
   for (const w of words) {
