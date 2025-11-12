@@ -1,4 +1,4 @@
-import { capitalize, isTitle } from "./capitalize"
+import { capitalize, isTitle, isUpperCase } from "./capitalize"
 
 describe('capitalizing words', () => {
   it('should capitalize the first letter of a word', () => {
@@ -29,11 +29,23 @@ describe('capitalizing words', () => {
     expect(isTitle('1001 Dalmatians')).toBe(true)
   })
 
+  it('should return true if a title has a number at start of non-first word', () => {
+    expect(isTitle('Platform 9 And Three Quarters')).toBe(true)
+  })
+
   it('should return false if a string is not a title', () => {
     expect(isTitle('I have never seen this before.')).toBe(false)
   })
 
   it('should return false if only one word in string is capitalized', () => {
     expect(isTitle(`I once saw Oasis perform live.`)).toBe(false)
+  })
+
+  it('should detect if a char is upper case', () => {
+    expect(isUpperCase('A')).toBe(true)
+  })
+
+  it('should return false if char is not upper case', () => {
+    expect(isUpperCase('a')).toBe(false)
   })
 })

@@ -28,10 +28,6 @@ export function isTitle(string) {
   return true;
 }
 
-function isUpperCase(char) {
+export function isUpperCase(char) {
   return char.length === 1 && char === char.toUpperCase() && char !== char.toLowerCase();
-}
-
-function isLowerCase(char) {
-  return char.length === 1 && char === char.toLowerCase() && char !== char.toLowerCase();
 }
